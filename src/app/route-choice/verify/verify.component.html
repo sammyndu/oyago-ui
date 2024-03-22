@@ -1,0 +1,82 @@
+<ion-content [fullscreen]="true">
+  <div class="body">
+    <div id="container">
+      <div id="header">
+        <ion-img class="header-image" src="assets/image/route-choice-header.png"></ion-img>
+      </div>
+
+      <form class="form">
+        <ion-input label="Enter your ORC" color="success" labelPlacement="floating" fill="outline"
+          placeholder=""></ion-input>
+        <ion-row>
+          <ion-col>
+            <ion-button 
+            shape="round" 
+            expand="block" 
+            class="sign-up" color="success">Existing</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button 
+            shape="round" 
+            expand="block" 
+            class="sign-up" 
+            color="primary">New</ion-button>
+          </ion-col>
+        </ion-row>
+
+        <div class="result-container">
+          <ion-row>
+            <ion-col  size="7">
+              <ion-input 
+              class="result"
+              color="warning" 
+              type="text" 
+              fill="outline"
+              labelPlacement="floating" 
+              placeholder="">
+            </ion-input>
+  
+            <ion-input 
+              class="result bottom"
+              color="warning" 
+              type="text" 
+              fill="outline"
+              labelPlacement="floating" 
+              placeholder="">
+            </ion-input>
+  
+            </ion-col>
+            <ion-col size="5">
+              <ion-img id="smiley" src="assets/image/smiley.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </div>
+
+
+        <ion-row>
+          <ion-col>
+            <ion-radio-group id="radio-container"  value="custom-checked">
+              <ion-row>
+                <ion-col size="5">
+                  <ion-radio  class="ion-margin-end" id="confirm" value="custom" aria-label="Custom checkbox">
+                    Confirm <br><span style="color:black;">(E mi ni)</span>
+                  </ion-radio>
+                </ion-col>
+                <ion-col size="5" offset="2">
+                  <ion-radio class="ion-float-right" justify="end" id="no" value="custom-checked" aria-label="Custom checkbox">
+                    NO <br> <span style="color:black;">(E mi ko)</span>
+                  </ion-radio>
+
+                </ion-col>
+              </ion-row>
+             
+              
+            </ion-radio-group>
+          </ion-col>
+        </ion-row>
+
+        <ion-button routerLink="/route-choice/select" shape="round" expand="block" class="sign-up" color="success" fill="outline">Submit</ion-button>
+      </form>
+    </div>
+  </div>
+</ion-content>

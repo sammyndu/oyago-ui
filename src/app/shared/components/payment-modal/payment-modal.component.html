@@ -1,0 +1,14 @@
+<ion-content [fullscreen]="true">
+<div class="body">
+  <div id="container">
+    <ion-img class="payment" src="assets/image/success-payment.png"></ion-img>
+    <div id="code">
+      <ion-text id="title" color="danger">{{ title }}</ion-text>
+      <br>
+      <ion-text id="content" color="dark">{{ content }}</ion-text>
+    </div>
+
+    <ion-button [routerLink]="url">{{ buttonText }}</ion-button>
+  </div>
+</div>
+</ion-content>

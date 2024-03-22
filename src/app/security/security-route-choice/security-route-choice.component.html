@@ -1,0 +1,39 @@
+<ion-content [fullscreen]="true">
+  <div class="body">
+    <div id="container">
+      <div id="header">
+        <ion-img class="header-image" src="assets/image/security-dashboard.png"></ion-img>
+      </div>
+
+     <ion-row class="ion-margin-bottom">
+      <ion-col>
+        <ion-text>Hey Olayiwola Wasabi</ion-text>
+      </ion-col>
+      <ion-col>
+        <ion-text class="ion-float-right"> {{ date | date: 'HH:mm'}}  {{ date | date: 'MMM d, yyyy'}}</ion-text>
+      </ion-col>
+     </ion-row>
+
+      <form class="form">
+        <ion-input label="Enter your ORC" color="success" labelPlacement="floating" fill="outline"
+          placeholder=""></ion-input>
+        <ion-row class="ion-margin-top">
+          <ion-col>
+            <ion-button 
+            shape="round" 
+            expand="block" 
+            class="sign-up" color="success">Route Choice</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button 
+            shape="round" 
+            expand="block" 
+            class="sign-up" 
+            color="primary">Assign Route</ion-button>
+          </ion-col>
+        </ion-row>
+
+      </form>
+    </div>
+  </div>
+</ion-content>

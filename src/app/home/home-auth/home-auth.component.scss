@@ -1,0 +1,31 @@
+ion-button.sign-up {
+    //--color: black;
+    margin-bottom: 10%;
+    color: green
+}
+
+#container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70%;
+    //transform: translateY(-50%);
+    //height: 100%;
+  
+    //background-color: #F2C94C;
+  
+  }
+  
+
+#container ion-button {
+    width: 50%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.body {
+    background: #F2C94C69;
+    height: 100%;
+  }

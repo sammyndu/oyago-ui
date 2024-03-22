@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <div class="body">
+    <div id="container">
+     <div id="title">
+      <ion-text>Log In</ion-text>
+     </div>
+
+     <form class="form">
+       <ion-input label="Username" color="success" labelPlacement="floating" fill="outline"  placeholder=""></ion-input>
+
+      <ion-button routerLink="/home/dashboard" shape="round" expand="block"  class="sign-up" color="success" fill="outline">Submit</ion-button>
+     </form>
+     <ion-row>
+      <ion-col>
+        <ion-text color="primary">Forgot Username</ion-text>
+      </ion-col>
+      <ion-col>
+        <ion-text class="ion-float-right" routerLink="/auth/signup" color="danger">Sign Up</ion-text>
+      </ion-col>
+     </ion-row>
+
+      
+    </div>
+  </div>
+  </ion-content>

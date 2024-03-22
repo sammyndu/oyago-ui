@@ -1,0 +1,117 @@
+#header {
+    height: 30%;
+    background-color: #F2994A;
+    margin-bottom: 10%;
+}
+
+#header .header-image {
+    padding: 40px 20px;
+}
+
+#smiley {
+  
+}
+
+form {
+    padding: 0px 20px;
+}
+
+form ion-button {
+    margin-top: 10%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.result-container {
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+    //height:140px
+}
+
+.result {
+    padding: 0px;
+    height: 25%;
+}
+
+ion-input.result {
+    min-height: 40px;
+    margin-top: 5px
+}
+
+ion-input.bottom {
+    margin-top: 32px;
+}
+
+#radio-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#confirm {
+    color: #2dd36f;
+    //margin-right: 30%
+}
+
+#no {
+    color: red;
+}
+
+// ion-col {
+//     --ion-grid-column-padding: 0px;
+// }
+
+
+
+
+//radio transform
+ion-radio::part(container) {
+    width: 30px;
+    height: 30px;
+  
+    border-radius: 8px;
+    border: 2px solid #ddd;
+  }
+
+  ion-radio::part(mark) {
+    background: none;
+    transition: none;
+    transform: none;
+    border-radius: 0;
+  }
+  
+  ion-radio.radio-checked::part(container) {
+    background: #6815ec;
+    border-color: transparent;
+  }
+
+  ion-radio#no.radio-checked::part(container) {
+    background: #eb445a;
+    border-color: transparent;
+  }
+  
+  ion-radio.radio-checked::part(mark) {
+    width: 6px;
+    height: 10px;
+  
+    border-width: 0px 2px 2px 0px;
+    border-style: solid;
+    border-color: #fff;
+  
+    transform: rotate(45deg);
+  }
+
+//   ion-radio#no.radio-checked::part(mark) {
+//     content: "\274c";
+//   width: 14px;
+//   height: 14px;
+//   background: white;
+//   position: absolute;
+//   top: 5px;
+//   left: 5px;
+//   border-radius: 50%;
+//   //transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+//   transform: scale(45deg);
+//   }
+

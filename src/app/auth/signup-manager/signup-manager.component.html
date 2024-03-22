@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+  <div class="body">
+    <div id="container">
+     <div id="title">
+      <ion-text>You are a Loading Point Manager</ion-text>
+     </div>
+
+     <p>Are you in-charge any of this? terminal, garage, ferry station, interchange?</p>
+
+     <form class="form">
+       <ion-input label="Enter your phone number" color="success" labelPlacement="floating" fill="outline"  placeholder="+234"></ion-input>
+       <ion-input label="Create your username" color="success" type="password" fill="outline" labelPlacement="floating" placeholder=""></ion-input>
+      
+       <ion-select label="Loading Point Type" color="success" labelPlacement="floating" fill="outline" aria-label="fruit" placeholder="Select loading point type">
+        <ion-select-option value="Terminal">Terminal</ion-select-option>
+        <ion-select-option value="Garage">Garage</ion-select-option>
+        <ion-select-option value="Ferry Station">Ferry Station</ion-select-option>
+        <ion-select-option value="Interchange">Interchange</ion-select-option>
+      </ion-select>
+
+      <ion-input label="Loading point location" color="success" type="text" fill="outline" labelPlacement="floating" placeholder="e.g jibowu park etc"></ion-input>
+
+      <ion-input label="Upload picture" color="success" type="file" fill="outline" labelPlacement="floating"></ion-input>
+
+      <ion-button routerLink="/home/dashboard" shape="round" expand="block"  class="sign-up" color="success" fill="outline">Submit</ion-button>
+     </form>
+
+      
+    </div>
+  </div>
+  </ion-content>

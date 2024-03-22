@@ -1,0 +1,62 @@
+<ion-content [fullscreen]="true">
+  <div class="body">
+    <div id="container">
+      <div id="header">
+        <ion-row>
+          <ion-col>
+            <ion-img class="header-image" src="assets/image/megaphone.png"></ion-img>
+          </ion-col>
+          <ion-col>
+            <ion-img class="header-image" src="assets/image/oyago.png"></ion-img>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div id="content">
+        <ion-row class="ion-padding-horizontal">
+          <ion-col size="6">
+            <ion-col size="3" class="ion-float-left">
+              <ion-icon name="person-circle-outline"></ion-icon>
+            </ion-col>
+            <ion-col size="6" >
+              <ion-text>Welcome,</ion-text><br>
+              <ion-text>Kabir Hassan</ion-text>
+            </ion-col>
+            
+          </ion-col>
+          <ion-col size="6" >
+            <ion-text class="ion-float-right">Loading Manager ID</ion-text>
+            <ion-text class="ion-float-right">123234345</ion-text>
+          </ion-col>
+        </ion-row>
+  
+        <form class="form">
+          <ion-input label="Enter your phone number" color="success" labelPlacement="floating" fill="outline"  placeholder="+234"></ion-input>
+          <ion-input label="Enter loading route" color="success" type="password" fill="outline" labelPlacement="floating" placeholder=""></ion-input>
+         
+          <ion-select label="Vehicle Type" color="success" labelPlacement="floating" fill="outline" aria-label="fruit" placeholder="Select vehicle type">
+           <ion-select-option value="Terminal">Terminal</ion-select-option>
+           <ion-select-option value="Garage">Garage</ion-select-option>
+           <ion-select-option value="Ferry Station">Ferry Station</ion-select-option>
+           <ion-select-option value="Interchange">Interchange</ion-select-option>
+         </ion-select>
+   
+         <ion-input label="Enter your seat capacity" color="success" type="password" fill="outline" labelPlacement="floating" placeholder=""></ion-input>
+
+         <ion-input label="Enter your plate number" color="success" type="text" fill="outline" labelPlacement="floating" placeholder="e.g AEW 1234 etc"></ion-input>
+   
+         <ion-input label="My price" color="success" type="text" fill="outline" labelPlacement="floating"></ion-input>
+   
+         <ion-button id="open-modal" shape="round" expand="block"  class="sign-up" color="success" fill="outline">O ya pero e</ion-button>
+        </form>
+      </div>
+     
+    </div>
+  </div>
+
+  <ion-modal trigger="open-modal" (willDismiss)="onWillDismiss($event)">
+    <ng-template>
+      <app-payment-modal [url]="'/share-route/live-loading'" [buttonText]="'Go to Live Loading'" [title]="'Route Code'" [content]="'RCGSARE'"></app-payment-modal>
+    </ng-template>
+  </ion-modal>
+</ion-content>

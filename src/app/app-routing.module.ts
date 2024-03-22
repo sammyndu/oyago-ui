@@ -7,6 +7,22 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then( m => m.AuthModule)
+  },
+  {
+    path: 'security',
+    loadChildren: () => import('./security/security.module').then( m => m.SecurityModule)
+  },
+  {
+    path: 'share-route',
+    loadChildren: () => import('./share-route/share-route.module').then( m => m.ShareRouteModule)
+  },
+  {
+    path: 'route-choice',
+    loadChildren: () => import('./route-choice/route-choice.module').then( m => m.RouteChoiceModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'

@@ -1,0 +1,72 @@
+<ion-content [fullscreen]="true">
+  <div class="body">
+    <div id="container">
+      <div id="header">
+        <ion-img class="header-image" src="assets/image/route-choice-header.png"></ion-img>
+      </div>
+
+      <div id="content">
+        <ion-row >
+          <ion-col>
+            <ion-radio-group id="radio-container"  value="custom-checked">
+              <ion-row class="ion-padding-horizontal">
+                <ion-col size="6">
+                  <ion-radio  class="ion-margin-end" id="confirm" value="custom" aria-label="Custom checkbox">
+                    MORNING <br><span style="color:black;">4AM - 1:30PM</span>
+                  </ion-radio>
+                </ion-col>
+                <ion-col size="6" >
+                  <ion-radio class="ion-float-right" justify="end" id="no" value="custom-checked" aria-label="Custom checkbox">
+                    AFTERNOON <br> <span style="color:black;">2PM - 10:30PM</span>
+                  </ion-radio>
+  
+                </ion-col>
+              </ion-row>
+             
+              
+            </ion-radio-group>
+          </ion-col>
+        </ion-row>
+  
+        <div class="ion-padding-start ion-padding-top ion-margin-bottom ion-margin-top">
+          <ion-text>Vehicle Hand Over (Optional)</ion-text>
+        </div>
+  
+        <form class="form">
+          <ion-input class="ion-margin-bottom" label="Enter your ORC" color="success" labelPlacement="floating" fill="outline"
+            placeholder=""></ion-input>
+  
+          <ion-input label="Enter your ORC" color="success" labelPlacement="floating" fill="outline"
+            placeholder=""></ion-input>
+         
+  
+            <div class="ion-text-center ion-margin-top ion-padding-top ion-margin-bottom ion-padding-bottom">
+              <ion-text>Select your route choice</ion-text>
+            </div>
+  
+          <div class="result-container">
+            <ion-row>
+              <ion-col class="route" size="9">
+               <ion-text >Ikotun-Ejigbo-Cele Expressway</ion-text>  
+              </ion-col>
+              <ion-col size="3">
+                <ion-button shape="round" color="danger">Full</ion-button>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-align-items-center route" size="9">
+               <ion-text class="">Iyana Ipaja-Idimu-Ikotun</ion-text>  
+              </ion-col>
+              <ion-col size="3">
+                <ion-button shape="round" color="success">Go</ion-button>
+              </ion-col>
+            </ion-row>
+          </div>
+  
+          <ion-button shape="round" expand="block" class="sign-up" color="success" fill="outline">Submit</ion-button>
+        </form>
+      </div>
+     
+    </div>
+  </div>
+</ion-content>
