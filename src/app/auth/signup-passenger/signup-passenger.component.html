@@ -10,7 +10,18 @@
        <ion-input label="Create your username" color="success" type="password" fill="outline" labelPlacement="floating" placeholder=""></ion-input>
       
 
-      <ion-input label="Upload picture" color="success" type="file" fill="outline" labelPlacement="floating"></ion-input>
+       <div class="upload-container">
+        @if(!fileString) {
+          
+          <ion-img  (click)="addImage()" class="upload-img" src="assets/image/upload-thumbnail.svg">
+          </ion-img>
+  
+        } @else {
+  
+          <ion-img class="upload-img" [src]="fileString"></ion-img>
+  
+        }
+      </div>
 
       <ion-button routerLink="/home/dashboard" shape="round" expand="block"  class="sign-up" color="success" fill="outline">Submit</ion-button>
      </form>

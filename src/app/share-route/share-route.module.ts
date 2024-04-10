@@ -7,6 +7,8 @@ import { SharedModule } from '../shared/shared.module';
 import { LiveLoadingComponent } from './live-loading/live-loading.component';
 import { LoadingRecordComponent } from './loading-record/loading-record.component';
 import { PerformanceComponent } from './performance/performance.component';
+import { StarRatingModule } from 'angular-star-rating';
+import { ShareRouteTabsComponent } from './share-route-tabs/share-route-tabs.component';
 
 
 @NgModule({
@@ -15,12 +17,14 @@ import { PerformanceComponent } from './performance/performance.component';
     LiveLoadingComponent,
     LoadingRecordComponent,
     PerformanceComponent,
+    ShareRouteTabsComponent
   ],
   imports: [
     CommonModule,
     IonicModule,
     SharedModule,
-    ShareRouteRoutingModule
+    ShareRouteRoutingModule,
+    StarRatingModule.forRoot()
   ]
 })
 export class ShareRouteModule { }

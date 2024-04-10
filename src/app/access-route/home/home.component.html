@@ -1,0 +1,50 @@
+<ion-content [fullscreen]="true">
+  <div class="body">
+    <div id="container">
+      <div id="header">
+        <ion-img class="header-image" src="assets/image/access-route-header1.svg"></ion-img>
+        <!-- <ion-img class="header-image" src="assets/image/access-route-header2.svg"></ion-img> -->
+      </div>
+
+      <ion-row class="ion-padding-horizontal ion-padding-top ion-margin-bottom">
+        <ion-col size="6" class="ion-float-left">
+          <ion-col size="3" class="ion-float-left">
+            <ion-icon class="user-icon" name="person-circle-outline"></ion-icon>
+          </ion-col>
+          <ion-col size="6" >
+            <ion-text>Welcome,</ion-text><br>
+            <ion-text>Kabir Hassan</ion-text>
+          </ion-col>
+          
+        </ion-col>
+        <ion-col size="6" >
+          <!-- <ion-text class="ion-float-right">Loading Manager ID</ion-text>
+          <ion-text class="ion-float-right">123234345</ion-text> -->
+        </ion-col>
+      </ion-row>
+
+      <form class="form">
+        <ion-row >
+          <ion-col size="12" offset="">
+            <!-- <ion-label>Enter Access Code</ion-label>
+            <br>
+            <ion-input color="success"  fill="outline"
+              placeholder=""></ion-input> -->
+          </ion-col>
+          <ion-col size="">
+            <!-- <ion-input color="success" labelPlacement="floating" fill="outline"
+              placeholder=""></ion-input> -->
+          </ion-col>
+        </ion-row>
+
+        <ion-button id="open-modal"  expand="block" class="sign-up" color="success" >Make Payment</ion-button>
+      </form>
+    </div>
+  </div>
+
+  <ion-modal trigger="open-modal">
+    <ng-template>
+      <app-payment-modal [url]="'/access-route/share-route'" [buttonText]="'Live Check'" [title]="'Live Route Code'" [content]="'RCGSARE'"></app-payment-modal>
+    </ng-template>
+  </ion-modal>
+</ion-content>

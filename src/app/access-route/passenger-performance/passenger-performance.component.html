@@ -1,0 +1,115 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Performance
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-icon routerLink="/home/auth" name="log-out-outline">
+      </ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Performance</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="header-image">
+    <ion-img src="assets/image/matching-route.png"></ion-img>
+  </div>
+
+  <div class="body">
+    <div id="container">
+      <!-- <div id="header">
+        <ion-img class="header-image" src="assets/image/matching-route-header.svg"></ion-img>
+      </div> -->
+
+      <ion-row class="ion-padding-horizontal ion-padding-top ion-margin-bottom">
+        <ion-col size="6" class="ion-float-left">
+          <ion-col size="3" class="ion-float-left">
+            <ion-icon class="user-icon" name="person-circle-outline"></ion-icon>
+          </ion-col>
+          <ion-col size="6" >
+            <ion-text>Welcome,</ion-text><br>
+            <ion-text>Kabir Hassan</ion-text>
+          </ion-col>
+          
+        </ion-col>
+        <ion-col size="6" >
+          <!-- <ion-text class="ion-float-right">Loading Manager ID</ion-text>
+          <ion-text class="ion-float-right">123234345</ion-text> -->
+        </ion-col>
+      </ion-row>
+  
+      <ion-row class="ion-padding-horizontal ion-padding-vertical">
+        <ion-col>
+          <ion-text>
+            See the driver's Route Service Rating from passengers
+          </ion-text>
+        </ion-col>
+      </ion-row>
+  
+      <ion-row >
+        <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+          Service Rating
+        </ion-col>
+  
+        <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+          <star-rating [starType]="'svg'" [rating]="2.63"></star-rating>
+        </ion-col>
+  
+        <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+          Loading Point Rating
+        </ion-col>
+  
+        <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+          <star-rating [starType]="'svg'" [rating]="2.63"></star-rating>
+        </ion-col>
+  
+        <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+          Price Rating
+        </ion-col>
+  
+        <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+          <star-rating [starType]="'svg'" [rating]="2.63"></star-rating>
+        </ion-col>
+  
+        <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+          Suspecious Rating
+        </ion-col>
+  
+        <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+          <star-rating [starType]="'svg'" [rating]="2.63"></star-rating>
+        </ion-col>
+  
+        <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+          Vehicle ID Rating
+        </ion-col>
+  
+        <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+          <star-rating [starType]="'svg'" [rating]="2.63"></star-rating>
+        </ion-col>
+  
+        <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+          Driver ID Rating
+        </ion-col>
+  
+        <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+          <star-rating [starType]="'svg'" [rating]="2.63"></star-rating>
+        </ion-col>
+      </ion-row>
+     
+    </div>
+  </div>
+
+  <ion-modal trigger="open-modal" [initialBreakpoint]="0.75" [breakpoints]="[0.75]">
+    <ng-template>
+      <app-payment-modal [url]="'/matching-route/matching-route'" [buttonText]="'Go Live'" [title]="'Matching Route Code'" [content]="'RCGSARE'"></app-payment-modal>
+    </ng-template>
+  </ion-modal>
+</ion-content>

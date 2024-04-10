@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { RouteChoiceRoutingModule } from './route-choice-routing.module';
 import { SelectRouteComponent } from './select-route/select-route.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -13,6 +14,7 @@ import { SelectRouteComponent } from './select-route/select-route.component';
   imports: [
     CommonModule,
     FormsModule,
+    SharedModule,
     IonicModule,
     RouteChoiceRoutingModule
   ]

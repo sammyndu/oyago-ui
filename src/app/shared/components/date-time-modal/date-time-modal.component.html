@@ -1,0 +1,23 @@
+<!-- <ion-content [fullscreen]="true">
+  <div class="body">
+    <div id="container">
+    
+    </div>
+  </div>
+  </ion-content> -->
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button color="medium" (click)="cancel()">Cancel</ion-button>
+      </ion-buttons>
+      
+      <ion-buttons slot="end">
+        <ion-button (click)="confirm()" [strong]="true">Confirm</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content >
+    <ion-datetime [(ngModel)]="time" presentation="time"></ion-datetime>
+    
+  </ion-content>

@@ -27,17 +27,31 @@
             </ion-radio-group>
           </ion-col>
         </ion-row>
+
+        <div class=" content">
+          <ion-accordion-group expand="inset">
+            <ion-accordion value="first">
+              <ion-item slot="header" color="light">
+                <ion-text>Vehicle Hand Over (Optional)</ion-text>
+              </ion-item>
+              <div class="ion-padding-horizontal ion-padding-vertical" slot="content">
+                <ion-input class="ion-margin-bottom" label="Name" color="success" labelPlacement="floating" fill="outline"
+            placeholder=""></ion-input>
   
-        <div class="ion-padding-start ion-padding-top ion-margin-bottom ion-margin-top">
-          <ion-text>Vehicle Hand Over (Optional)</ion-text>
+          <ion-input label="Phone Number" color="success" labelPlacement="floating" fill="outline"
+            placeholder=""></ion-input>
+              </div>
+            </ion-accordion>
+      
+          </ion-accordion-group>
         </div>
   
-        <form class="form">
-          <ion-input class="ion-margin-bottom" label="Enter your ORC" color="success" labelPlacement="floating" fill="outline"
-            placeholder=""></ion-input>
+        <!-- <div class="ion-padding-start ion-padding-top ion-margin-bottom ion-margin-top">
+          <ion-text>Vehicle Hand Over (Optional)</ion-text>
+        </div> -->
   
-          <ion-input label="Enter your ORC" color="success" labelPlacement="floating" fill="outline"
-            placeholder=""></ion-input>
+        <form class="form">
+         
          
   
             <div class="ion-text-center ion-margin-top ion-padding-top ion-margin-bottom ion-padding-bottom">
@@ -63,10 +77,16 @@
             </ion-row>
           </div>
   
-          <ion-button shape="round" expand="block" class="sign-up" color="success" fill="outline">Submit</ion-button>
+          <ion-button id="open-modal" shape="round" expand="block" class="sign-up" color="success" fill="outline">Submit</ion-button>
         </form>
       </div>
      
     </div>
   </div>
+
+  <ion-modal trigger="open-modal">
+    <ng-template>
+      <app-payment-modal [url]="'/home/dashboard'" [buttonText]="'Go to Live'" [title]="'Route Code'" [content]="'RCGSARE'"></app-payment-modal>
+    </ng-template>
+  </ion-modal>
 </ion-content>

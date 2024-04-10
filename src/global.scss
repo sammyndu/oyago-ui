@@ -24,3 +24,14 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+@import 'css-star-rating/css/star-rating.min.css';
+
+.input-fill-outline.sc-ion-input-md-h {
+    min-height: 40px !important;
+}
+
+.input-wrapper.sc-ion-input-md {
+    line-height: 15px;
+}

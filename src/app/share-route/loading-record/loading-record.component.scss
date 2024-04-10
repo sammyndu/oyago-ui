@@ -28,7 +28,10 @@
 //        }
 //     }
 // }
-
-.search-button {
-    font-size: 2rem;
+.button {
+    margin-top: 0px !important;
+    .search-button {
+        font-size: 1rem;
+        
+    }
 }

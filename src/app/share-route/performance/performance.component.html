@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Loading POint Perfromance
+      Loading Point Performance
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,11 +14,15 @@
     </ion-toolbar>
   </ion-header>
 
+  <div class="header-image">
+    <ion-img src="assets/image/matching-route.png"></ion-img>
+  </div>
+
   <div id="content">
-    <ion-row class="ion-padding-horizontal">
-      <ion-col size="6">
+    <ion-row class="ion-padding-horizontal ion-padding-top ion-margin-bottom">
+      <ion-col size="6" class="ion-float-left">
         <ion-col size="3" class="ion-float-left">
-          <ion-icon name="person-circle-outline"></ion-icon>
+          <ion-icon class="user-icon" name="person-circle-outline"></ion-icon>
         </ion-col>
         <ion-col size="6" >
           <ion-text>Welcome,</ion-text><br>
@@ -40,44 +44,56 @@
       </ion-col>
     </ion-row>
 
-    <ion-row>
-      <ion-col>
+    <ion-row >
+      <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
         Service Rating
       </ion-col>
 
-      <ion-col>
-        <ionic-rating-component #rating
-        activeIcon = "ios-star"
-        defaultIcon = "ios-star-outline"
-        activeColor = "#488aff" 
-        defaultColor = "#f4f4f4"
-        readonly="false"
-        rating="3"
-        fontSize = "32px"
-        (ratingChanged)="onRatingChange($event)">
-    </ionic-rating-component>
+      <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+        <star-rating [starType]="'svg'" [rating]="2.63"></star-rating>
+      </ion-col>
+
+      <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+        Loading Point Rating
+      </ion-col>
+
+      <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+        <star-rating [starType]="'svg'" [rating]="2.63"></star-rating>
+      </ion-col>
+
+      <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+        Price Rating
+      </ion-col>
+
+      <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+        <star-rating [starType]="'svg'" [rating]="2.63"></star-rating>
+      </ion-col>
+
+      <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+        Suspecious Rating
+      </ion-col>
+
+      <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+        <star-rating [starType]="'svg'" [rating]="2.63"></star-rating>
+      </ion-col>
+
+      <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+        Vehicle ID Rating
+      </ion-col>
+
+      <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+        <star-rating [starType]="'svg'" [rating]="2.63"></star-rating>
+      </ion-col>
+
+      <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+        Driver ID Rating
+      </ion-col>
+
+      <ion-col size="6" class="ion-padding-horizontal ion-padding-vertical">
+        <star-rating [starType]="'svg'" [rating]="2.63"></star-rating>
       </ion-col>
     </ion-row>
 
-    <form class="form">
-      <ion-input label="Enter your phone number" color="success" labelPlacement="floating" fill="outline"  placeholder="+234"></ion-input>
-      <ion-input label="Enter loading route" color="success" type="password" fill="outline" labelPlacement="floating" placeholder=""></ion-input>
-     
-      <ion-select label="Vehicle Type" color="success" labelPlacement="floating" fill="outline" aria-label="fruit" placeholder="Select vehicle type">
-       <ion-select-option value="Terminal">Terminal</ion-select-option>
-       <ion-select-option value="Garage">Garage</ion-select-option>
-       <ion-select-option value="Ferry Station">Ferry Station</ion-select-option>
-       <ion-select-option value="Interchange">Interchange</ion-select-option>
-     </ion-select>
-
-     <ion-input label="Enter your seat capacity" color="success" type="password" fill="outline" labelPlacement="floating" placeholder=""></ion-input>
-
-     <ion-input label="Enter your plate number" color="success" type="text" fill="outline" labelPlacement="floating" placeholder="e.g AEW 1234 etc"></ion-input>
-
-     <ion-input label="My price" color="success" type="text" fill="outline" labelPlacement="floating"></ion-input>
-
-     <ion-button id="open-modal" shape="round" expand="block"  class="sign-up" color="success" fill="outline">O ya pero e</ion-button>
-    </form>
   </div>
  
 

@@ -25,9 +25,9 @@ export class PaymentModalComponent  implements OnInit, ViewDidEnter {
     // throw new Error('Method not implemented.');
   }
 
-  submit(url: string) {
+  submit() {
     this.modalCtrl.dismiss();
-    this.router.navigate([url]);
+    this.router.navigate([this.url]);
   }
   
 

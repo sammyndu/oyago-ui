@@ -1,0 +1,124 @@
+<ion-content [fullscreen]="true">
+  <div class="body">
+    <div id="container">
+      <div id="header">
+        <ion-img class="header-image" src="assets/image/matching-route-header.svg"></ion-img>
+      </div>
+
+      <div id="content">
+        <ion-row class="ion-padding-horizontal">
+          <ion-col size="6">
+            <ion-col size="3" class="ion-float-left">
+              <ion-icon name="person-circle-outline"></ion-icon>
+            </ion-col>
+            <ion-col size="6" >
+              <ion-text>Welcome,</ion-text><br>
+              <ion-text>Kabir Hassan</ion-text>
+            </ion-col>
+            
+          </ion-col>
+          <ion-col size="6" >
+            <!-- <ion-text class="ion-float-right">Loading Manager ID</ion-text>
+            <ion-text class="ion-float-right">123234345</ion-text> -->
+          </ion-col>
+        </ion-row>
+
+        <div class="ion-padding-horizontal ion-margin-horizontal ion-margin-top">
+          <ion-text class="form-title">
+            Fill in your matching route info.
+          </ion-text>
+        </div>
+  
+        <form class="form">
+          <ion-row class="">
+
+            <ion-col size="6">
+              <ion-label>Select your Period Time</ion-label>
+              <ion-input name="periodTime" [readonly]="true" [(ngModel)]="periodTime" (click)="openModal(0)" class="ion-margin-bottom"  color="success" fill="outline"
+                placeholder=""></ion-input>
+            </ion-col>
+
+            <ion-col size="6">
+              <ion-label>Destination</ion-label>
+              <ion-input name="arrivalTime"  class="ion-margin-bottom"  color="success" fill="outline"
+                placeholder=""></ion-input>
+            </ion-col>
+
+          </ion-row>
+
+          <ion-row class="">
+
+            <ion-col size="6">
+              <ion-label>Vehicle Capacity</ion-label>
+              <ion-input name="periodTime" class="ion-margin-bottom"  color="success" fill="outline"
+                placeholder=""></ion-input>
+            </ion-col>
+
+            <ion-col size="6">
+              <ion-label>Plate Number</ion-label>
+              <ion-input name="arrivalTime"  class="ion-margin-bottom"  color="success" fill="outline"
+                placeholder=""></ion-input>
+            </ion-col>
+
+            <ion-col size="6">
+              <ion-label>Picking Point 1</ion-label>
+              <ion-input name="periodTime" class="ion-margin-bottom"  color="success" fill="outline"
+                placeholder=""></ion-input>
+            </ion-col>
+
+            <ion-col size="6">
+              <ion-label>Arrival Time 1</ion-label>
+              <ion-input name="arrivalTime" [readonly]="true" [(ngModel)]="arrivalTime" (click)="openModal(1)" class="ion-margin-bottom"  color="success" fill="outline"
+                placeholder=""></ion-input>
+            </ion-col>
+
+            <ion-col size="6">
+              <ion-label>Picking Point 2</ion-label>
+              <ion-input name="periodTime" class="ion-margin-bottom"  color="success" fill="outline"
+                placeholder=""></ion-input>
+            </ion-col>
+
+            <ion-col size="6">
+              <ion-label>Arrival Time 2</ion-label>
+              <ion-input name="arrivalTime" [readonly]="true" [(ngModel)]="arrivalTime" (click)="openModal(1)" class="ion-margin-bottom"  color="success" fill="outline"
+                placeholder=""></ion-input>
+            </ion-col>
+
+            <ion-col size="6">
+              <ion-label>Price 1</ion-label>
+              <ion-input name="arrivalTime" class="ion-margin-bottom"  color="success" fill="outline"
+                placeholder=""></ion-input>
+            </ion-col>
+
+            <ion-col size="6">
+              <ion-label>Price 2</ion-label>
+              <ion-input name="arrivalTime" class="ion-margin-bottom"  color="success" fill="outline"
+                placeholder=""></ion-input>
+            </ion-col>
+
+            
+
+            <ion-col size="6">
+              <ion-label>Planned Route</ion-label>
+              <ion-input name="periodTime" class="ion-margin-bottom"  color="success" fill="outline"
+                placeholder=""></ion-input>
+            </ion-col>
+
+          
+
+          </ion-row>
+
+
+         <ion-button id="open-modal" shape="round" expand="block"  class="sign-up" color="success" fill="outline">Submit</ion-button>
+        </form>
+      </div>
+     
+    </div>
+  </div>
+
+  <ion-modal trigger="open-modal" [initialBreakpoint]="0.75" [breakpoints]="[0.75]">
+    <ng-template>
+      <app-payment-modal [url]="'/matching-route/matching-status'" [buttonText]="'Go Live'" [title]="'Matching Route Code'" [content]="'RCGSARE'"></app-payment-modal>
+    </ng-template>
+  </ion-modal>
+</ion-content>

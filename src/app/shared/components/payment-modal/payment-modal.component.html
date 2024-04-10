@@ -8,7 +8,7 @@
       <ion-text id="content" color="dark">{{ content }}</ion-text>
     </div>
 
-    <ion-button [routerLink]="url">{{ buttonText }}</ion-button>
+    <ion-button (click)="submit()">{{ buttonText }}</ion-button>
   </div>
 </div>
 </ion-content>

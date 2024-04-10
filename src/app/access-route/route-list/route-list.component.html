@@ -1,0 +1,163 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Share Route
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-icon routerLink="/home/auth" name="log-out-outline">
+      </ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Share Route</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-row class="ion-padding-horizontal ion-padding-top ion-margin-bottom">
+    <ion-col size="6" class="ion-float-left">
+      <ion-col size="3" class="ion-float-left">
+        <ion-icon class="user-icon" name="person-circle-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="6" >
+        <ion-text>Welcome,</ion-text><br>
+        <ion-text>Kabir Hassan</ion-text>
+      </ion-col>
+      
+    </ion-col>
+    <ion-col size="6" >
+      <!-- <ion-text class="ion-float-right">Loading Manager ID</ion-text>
+      <ion-text class="ion-float-right">123234345</ion-text> -->
+    </ion-col>
+  </ion-row>
+
+
+  <div class="ion-padding-horizontal content">
+    <ion-accordion-group expand="inset">
+      <ion-accordion value="first">
+        <ion-item slot="header" color="success">
+          <ion-label>UKO Jibowu Park</ion-label>
+        </ion-item>
+        <div class="" slot="content">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title class="title">UkO Jibowu Park</ion-card-title>
+              <ion-card-subtitle class="subtitle">JMD 459 LK</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-list>
+                <ion-item>
+                  <ion-col size="6">
+                    <ion-label class="section-title">Loading Point</ion-label>
+                  </ion-col>
+                  <ion-col size="6">
+                    <ion-item>Lagos - Abuja</ion-item>
+                  </ion-col>
+                </ion-item>
+          
+                <ion-item>
+                  <ion-col size="6">
+                    <ion-label class="section-title">Vehicle Capacity</ion-label>
+                  </ion-col>
+                  <ion-col size="6">
+                    <ion-item>18</ion-item>
+                  </ion-col>
+                </ion-item>
+
+                <ion-item>
+                  <ion-col size="6">
+                    <ion-label class="section-title">Plate Number</ion-label>
+                  </ion-col>
+                  <ion-col size="6">
+                    <ion-item>AGL 654 SD</ion-item>
+                  </ion-col>
+                </ion-item>
+
+                <ion-item>
+                  <ion-col size="6">
+                    <ion-label class="section-title">Status</ion-label>
+                  </ion-col>
+                  <ion-col size="6">
+                    <ion-item>Completed</ion-item>
+                  </ion-col>
+                </ion-item>
+
+                <ion-item>
+                  <ion-button routerLink="/access-route/performance" color="success" expand="block">
+                    View Performance
+                  </ion-button>
+                </ion-item>
+               
+              </ion-list>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-accordion>
+
+      <ion-accordion value="second">
+        <ion-item slot="header" color="success">
+          <ion-label>ABC Mile 12 Park</ion-label>
+        </ion-item>
+        <div class="" slot="content">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title class="title">ABC Mile 12 Park</ion-card-title>
+              <ion-card-subtitle class="subtitle">OUT 459 LK</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-list>
+                <ion-item>
+                  <ion-col size="6">
+                    <ion-label class="section-title">Loading Point</ion-label>
+                  </ion-col>
+                  <ion-col size="6">
+                    <ion-item>Lagos - TOGO</ion-item>
+                  </ion-col>
+                </ion-item>
+          
+                <ion-item>
+                  <ion-col size="6">
+                    <ion-label class="section-title">Vehicle Capacity</ion-label>
+                  </ion-col>
+                  <ion-col size="6">
+                    <ion-item>38</ion-item>
+                  </ion-col>
+                </ion-item>
+
+                <ion-item>
+                  <ion-col size="6">
+                    <ion-label class="section-title">Plate Number</ion-label>
+                  </ion-col>
+                  <ion-col size="6">
+                    <ion-item>OUT 654 SD</ion-item>
+                  </ion-col>
+                </ion-item>
+
+                <ion-item>
+                  <ion-col size="6">
+                    <ion-label class="section-title">Status</ion-label>
+                  </ion-col>
+                  <ion-col size="6">
+                    <ion-item>Completed</ion-item>
+                  </ion-col>
+                </ion-item>
+
+                <ion-item>
+                  <ion-button routerLink="/access-route/performance" color="success" expand="block">
+                    View Performance
+                  </ion-button>
+                </ion-item>
+               
+              </ion-list>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+  </div>
+
+</ion-content>

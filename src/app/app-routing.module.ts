@@ -23,6 +23,14 @@ const routes: Routes = [
     loadChildren: () => import('./route-choice/route-choice.module').then( m => m.RouteChoiceModule)
   },
   {
+    path: 'matching-route',
+    loadChildren: () => import('./matching-route/matching-route.module').then( m => m.MatchingRouteModule)
+  },
+  {
+    path: 'access-route',
+    loadChildren: () => import('./access-route/access-route.module').then( m => m.AccessRouteModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'

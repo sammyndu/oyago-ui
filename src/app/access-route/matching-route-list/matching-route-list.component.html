@@ -1,0 +1,198 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Matching Route
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-icon routerLink="/home/auth" name="log-out-outline">
+      </ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Matching Route</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- <div class="header-image">
+    <ion-img src="assets/image/matching-route.png"></ion-img>
+  </div> -->
+
+  <div class="body">
+    <div id="container">
+      <!-- <div id="header">
+        <ion-img class="header-image" src="assets/image/matching-route-header.svg"></ion-img>
+      </div> -->
+
+      <ion-row class="ion-padding-horizontal ion-padding-top ion-margin-bottom">
+        <ion-col size="6" class="ion-float-left">
+          <ion-col size="3" class="ion-float-left">
+            <ion-icon class="user-icon" name="person-circle-outline"></ion-icon>
+          </ion-col>
+          <ion-col size="6" >
+            <ion-text>Welcome,</ion-text><br>
+            <ion-text>Kabir Hassan</ion-text>
+          </ion-col>
+          
+        </ion-col>
+        <ion-col size="6" >
+          <!-- <ion-text class="ion-float-right">Loading Manager ID</ion-text>
+          <ion-text class="ion-float-right">123234345</ion-text> -->
+        </ion-col>
+      </ion-row>
+
+      <div class="ion-padding-horizontal content">
+        <ion-accordion-group expand="inset">
+          <ion-accordion value="first">
+            <ion-item slot="header" color="success">
+              <ion-label>Destination - CMD</ion-label>
+            </ion-item>
+            <div class="" slot="content">
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-title class="title">Destination - CMD</ion-card-title>
+                  <ion-card-subtitle class="subtitle">JMD 459 LK</ion-card-subtitle>
+                </ion-card-header>
+                <ion-card-content>
+                  <ion-list>
+                    <ion-item>
+                      <ion-col size="6">
+                        <ion-label class="section-title">Picking Point 1</ion-label>
+                      </ion-col>
+                      <ion-col size="6">
+                        <ion-item>Onipanu</ion-item>
+                      </ion-col>
+                    </ion-item>
+
+                    <ion-item>
+                      <ion-col size="6">
+                        <ion-label class="section-title">Arrival Time 1</ion-label>
+                      </ion-col>
+                      <ion-col size="6">
+                        <ion-item>4:25 am</ion-item>
+                      </ion-col>
+                    </ion-item>
+              
+                    <ion-item>
+                      <ion-col size="6">
+                        <ion-label class="section-title">Picking Point 2</ion-label>
+                      </ion-col>
+                      <ion-col size="6">
+                        <ion-item>Maryland</ion-item>
+                      </ion-col>
+                    </ion-item>
+    
+                    <ion-item>
+                      <ion-col size="6">
+                        <ion-label class="section-title">Arrival Time 2</ion-label>
+                      </ion-col>
+                      <ion-col size="6">
+                        <ion-item>4:00 am</ion-item>
+                      </ion-col>
+                    </ion-item>
+    
+                    <ion-item>
+                      <ion-col size="6">
+                        <ion-label class="section-title">Date</ion-label>
+                      </ion-col>
+                      <ion-col size="6">
+                        <ion-text>18/01/2024</ion-text>
+                      </ion-col>
+                    </ion-item>
+
+                    <ion-item>
+                      <ion-button routerLink="/access-route/performance" color="success" expand="block">
+                        View Performance
+                      </ion-button>
+                    </ion-item>
+                   
+                  </ion-list>
+                </ion-card-content>
+              </ion-card>
+            </div>
+          </ion-accordion>
+    
+          <ion-accordion value="second">
+            <ion-item slot="header" color="success">
+              <ion-label>Destination - IKEJA</ion-label>
+            </ion-item>
+            <div class="" slot="content">
+              <ion-card-header>
+                <ion-card-title class="title">Destination - IKEJA</ion-card-title>
+                <ion-card-subtitle class="subtitle">JMD 459 LK</ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-list>
+                  <ion-item>
+                    <ion-col size="6">
+                      <ion-label class="section-title">Picking Point 1</ion-label>
+                    </ion-col>
+                    <ion-col size="6">
+                      <ion-item>Irawo</ion-item>
+                    </ion-col>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-col size="6">
+                      <ion-label class="section-title">Arrival Time 1</ion-label>
+                    </ion-col>
+                    <ion-col size="6">
+                      <ion-item>6:25 am</ion-item>
+                    </ion-col>
+                  </ion-item>
+            
+                  <ion-item>
+                    <ion-col size="6">
+                      <ion-label class="section-title">Picking Point 2</ion-label>
+                    </ion-col>
+                    <ion-col size="6">
+                      <ion-item>Haruna</ion-item>
+                    </ion-col>
+                  </ion-item>
+  
+                  <ion-item>
+                    <ion-col size="6">
+                      <ion-label class="section-title">Arrival Time 2</ion-label>
+                    </ion-col>
+                    <ion-col size="6">
+                      <ion-item>6:00 am</ion-item>
+                    </ion-col>
+                  </ion-item>
+  
+                  <ion-item>
+                    <ion-col size="6">
+                      <ion-label class="section-title">Date</ion-label>
+                    </ion-col>
+                    <ion-col size="6">
+                      <ion-item>11/01/2024</ion-item>
+                    </ion-col>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-button routerLink="/access-route/performance" color="success" expand="block">
+                      View Performance
+                    </ion-button>
+                  </ion-item>
+                 
+                </ion-list>
+              </ion-card-content>
+              <!-- <ion-card>
+              </ion-card> -->
+            </div>
+          </ion-accordion>
+        </ion-accordion-group>
+      </div>
+     
+    </div>
+  </div>
+
+  <ion-modal trigger="open-modal" [initialBreakpoint]="0.75" [breakpoints]="[0.75]">
+    <ng-template>
+      <app-payment-modal [url]="'/matching-route/matching-route'" [buttonText]="'Go Live'" [title]="'Matching Route Code'" [content]="'RCGSARE'"></app-payment-modal>
+    </ng-template>
+  </ion-modal>
+</ion-content>
