@@ -4,7 +4,7 @@ import { RouteInfoComponent } from './route-info/route-info.component';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { MatchingRouteRoutingModule } from './matching-route-routing.module';
-import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
 import { MatchingStatusComponent } from './matching-status/matching-status.component';
 import { MatchingRecordComponent } from './matching-record/matching-record.component';
 import { MatchingPerformanceComponent } from './matching-performance/matching-performance.component';

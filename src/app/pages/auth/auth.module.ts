@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SignupComponent } from './signup/signup.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { AuthRoutingModule } from './auth-routing.module';
 import { SignupPassengerComponent } from './signup-passenger/signup-passenger.component';
@@ -23,6 +23,7 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     FormsModule,
     IonicModule,
     AuthRoutingModule

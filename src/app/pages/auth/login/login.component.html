@@ -5,8 +5,16 @@
       <ion-text>Log In</ion-text>
      </div>
 
-     <form class="form">
-       <ion-input label="Username" color="success" labelPlacement="floating" fill="outline"  placeholder=""></ion-input>
+     <form class="form" [formGroup]="form" >
+       <ion-input 
+       formControlName="username" 
+       [class.ng-invalid]="errorControl['username'].invalid && (errorControl['username'].dirty || errorControl['username'].touched || submitted)"
+       label="Username" 
+       color="success" 
+       labelPlacement="floating" 
+       fill="outline"  
+       placeholder="">
+      </ion-input>
 
       <ion-button routerLink="/home/dashboard" shape="round" expand="block"  class="sign-up" color="success" fill="outline">Submit</ion-button>
      </form>

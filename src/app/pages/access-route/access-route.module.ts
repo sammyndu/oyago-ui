@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { AccessRouteRoutingModule } from './access-route-routing.module';
-import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
 import { RouteListComponent } from './route-list/route-list.component';
 import { MatchingRouteListComponent } from './matching-route-list/matching-route-list.component';
 import { PassengerPerformanceComponent } from './passenger-performance/passenger-performance.component';

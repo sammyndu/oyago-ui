@@ -4,31 +4,31 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
     path: 'auth',
-    loadChildren: () => import('./auth/auth.module').then( m => m.AuthModule)
+    loadChildren: () => import('./pages/auth/auth.module').then( m => m.AuthModule)
   },
   {
     path: 'security',
-    loadChildren: () => import('./security/security.module').then( m => m.SecurityModule)
+    loadChildren: () => import('./pages/security/security.module').then( m => m.SecurityModule)
   },
   {
     path: 'share-route',
-    loadChildren: () => import('./share-route/share-route.module').then( m => m.ShareRouteModule)
+    loadChildren: () => import('./pages/share-route/share-route.module').then( m => m.ShareRouteModule)
   },
   {
     path: 'route-choice',
-    loadChildren: () => import('./route-choice/route-choice.module').then( m => m.RouteChoiceModule)
+    loadChildren: () => import('./pages/route-choice/route-choice.module').then( m => m.RouteChoiceModule)
   },
   {
     path: 'matching-route',
-    loadChildren: () => import('./matching-route/matching-route.module').then( m => m.MatchingRouteModule)
+    loadChildren: () => import('./pages/matching-route/matching-route.module').then( m => m.MatchingRouteModule)
   },
   {
     path: 'access-route',
-    loadChildren: () => import('./access-route/access-route.module').then( m => m.AccessRouteModule)
+    loadChildren: () => import('./pages/access-route/access-route.module').then( m => m.AccessRouteModule)
   },
   {
     path: '',
